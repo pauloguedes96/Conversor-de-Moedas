@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Conversor de Moedas</h1>
+
+        <div id="operacao">
+
+            <div id="m1">
+
+                <input type="number" id="moeda1" onkeyup="calcular()" autofocus>
+
+                <select name="moedas1" id="moedas1" onchange="calcular()">
+                    <option class="opt" value="USD">Dolar</option>
+                    <option class="opt" value="EUR">Euro</option>
+                    <option class="opt" value="BRL">Real</option>
+                </select>
+
+            </div>
+
+            <div id="m2">
+
+                <input type="number" id="moeda2" disabled>
+
+                <select name="moedas2" id="moedas2" onchange="calcular()">
+                    <option class="opt" value="BRL">Real</option>
+                    <option class="opt" value="USD">Dolar</option>
+                    <option class="opt" value="EUR">Euro</option>
+                </select>
+
+            </div>
+
+            <button id="btnConverter" onclick="calcular()">Converter</button>
+
+        </div>
+
+        <div id="resultado">Resultado</div>
+
+    </div>
+
+    <footer>
+        <p>Dev. Guedes</p>
+        <a href="https://github.com/pauloguedes96">
+            <img src="./icons/GitHub-Mark-32px.png" alt="">
+        </a>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
