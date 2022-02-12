@@ -18,7 +18,7 @@
 body{
     width: 100vw;
     min-height: 100vh;
-    background-color: black;
+    background-color: wheat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@ body{
 #container{
     width: 800px;
     min-height: 400px;
-    background-color: rgb(172, 172, 172);
+    background-color: var(--branco);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
