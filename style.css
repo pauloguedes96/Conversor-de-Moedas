@@ -183,6 +183,13 @@ footer img {
     }
 }
 
+@media only screen and (max-height: 540px) {
+
+    footer{
+        display: none;
+    }
+}
+
 /* ============================== */
 
 input[type=number]::-webkit-inner-spin-button { 
